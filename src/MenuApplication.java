@@ -20,4 +20,11 @@ public class MenuApplication {
             System.out.println(JgmaProfissional.suaAreaAtuacao());
 
     }
+     public abstract class Profissional {
+        public abstract String seuNome();
+        public abstract String suaAreaAtuacao();
+
+        public String getInfoCompleta() {
+            return seuNome() + " | Área: " + suaAreaAtuacao();
+    }
 }
